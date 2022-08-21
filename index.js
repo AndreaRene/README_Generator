@@ -1,13 +1,70 @@
-// TODO: Include packages needed for this application
 
-// TODO: Create an array of questions for user input
-const questions = [];
+const inquirer = require('inquirer');
+const { writeFile } = require('fs').promises;
+const generateMarkdown = require('./utils/generateMarkdown')
 
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+// user input questions
 
-// TODO: Create a function to initialize app
-function init() {}
+const questions = () => {
+    inquirer.prompt([
+        {
+            type: 'input',
+            name: 'title',
+            message: 'Please provide the title of your application:',
+        },
+        {
+            type: 'input',
+            name: 'description',
+            message: 'Please provide a detailed description of your application:',
+        },
+        {
+            type: 'input',
+            name: 'install',
+            message: 'Please provide any installation instructions for your application:',
+        },
+        {
+            type: 'input',
+            name: 'usage',
+            message: 'Please provide instructions for use of your application:',
+        },
+        {
+            type: 'input',
+            name: 'contribute',
+            message: 'Please provide instructions for how to contribute to your application:',
+        },
+        {
+            type: 'input',
+            name: 'tests',
+            message: 'Please provide any tests for your application:',
+        },
 
-// Function call to initialize app
-init();
+        {
+            type: 'list',
+            name: 'license',
+            choices: ['MIT', 'GNU', 'Apache'],
+        },
+        {
+            type: 'input',
+            name: 'github',
+            message: 'Please provide your github username:',
+        },
+        {
+            type: 'input',
+            name: 'email',
+            message: 'Please provide your email address:',
+        },
+
+    ]).then((dataResponse) => {
+        const readmeTxt = generateMarkdown(dataResponse);
+        someFunction(readmeTxt);
+    })
+};
+// need licenses info  
+
+// write README file 
+
+const someFunction = (readmeTxt) => {
+
+}
+
+questions();
