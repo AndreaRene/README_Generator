@@ -41,7 +41,7 @@ const questions = () => {
         {
             type: 'list',
             name: 'license',
-            choices: ['MIT', 'GNU', 'Apache'],
+            choices: ['None', 'MIT', 'GNU', 'Apache'],
         },
         {
             type: 'input',
@@ -64,7 +64,7 @@ const questions = () => {
 // write README file 
 
 const someFunction = (readmeTxt) => {
-
+    writeFile('README.md', readmeTxt);
 }
 
 questions();

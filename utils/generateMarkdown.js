@@ -14,13 +14,19 @@ function renderLicenseLink(license) { }
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(license) { }
+function renderLicenseSection(data) {
+  if (data.license != 'None') {
+    return `## License
+
+    ${data.license}`;
+  } else {
+    return;
+  }
+}
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
-
-## Badges
 
 ![](https://img.shields.io/badge/license-${data.license}-ff69b4)
   
@@ -63,16 +69,14 @@ ${data.colaborators}
 ${data.attributions}
   
 ${data.tutorials}
-  
-## License
-  
-${data.license}
+
+${renderLicenseSection(data)}
   
 ## Questions
 
 If you have any questions, feel free to reach out:
 
-[${data.github}](https://github.com/${data.github})
+- [${data.github}](https://github.com/${data.github})
 - [${data.email}](mailto:${data.email}?subject=[GitHub]%20README.md%20Generator%20Question)
 `;
 }
