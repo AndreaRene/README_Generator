@@ -50,7 +50,6 @@ ${data.description}
 - [Usage](#Usage)
 - [Contributing](#Contributing)
 - [Tests](#Tests)
-- [Credits](#Credits)
 ${renderLicenseToC(data)}
   
 ## Installation
@@ -68,16 +67,6 @@ ${data.contribute}
 ## Tests
   
 ${data.tests}
-  
-## Credits
-  
-### Colaborators
-${data.colaborators}
-  
-### Attributed 
-${data.attributions}
-  
-${data.tutorials}
 
 ${renderLicenseSection(data)}
   

@@ -56,15 +56,16 @@ const questions = () => {
 
     ]).then((dataResponse) => {
         const readmeTxt = generateMarkdown(dataResponse);
-        someFunction(readmeTxt);
+        createFile(readmeTxt);
     })
 };
-// need licenses info  
 
 // write README file 
 
-const someFunction = (readmeTxt) => {
+const createFile = (readmeTxt) => {
     writeFile('README.md', readmeTxt);
 }
+
+// call questions function to start prmopts
 
 questions();
