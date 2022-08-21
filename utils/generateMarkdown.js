@@ -8,6 +8,16 @@ function renderLicenseBadge(license) {
   }
 }
 
+function renderLicenseToC(data) {
+  var licenseToC = "- [License](#License)";
+  var questionsToC = "- [Questions](#Questions)";
+  if (data.license === "None") {
+    return questionsToC;
+  } else {
+    return licenseToC + "\n" + questionsToC;
+  }
+}
+
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) { }
@@ -15,10 +25,10 @@ function renderLicenseLink(license) { }
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(data) {
-  if (data.license != 'None') {
-    return `## License
-
-    ${data.license}`;
+  var heading = "## License";
+  var body = data.license;
+  if (data.license !== "None") {
+    return heading + "\n\n" + body;
   } else {
     return;
   }
@@ -36,13 +46,12 @@ ${data.description}
   
 ## Contents
   
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [Tests](#tests)
-- [Credits](#credits)
-- [License](#license)
-- [Questions](#questions)
+- [Installation](#Installation)
+- [Usage](#Usage)
+- [Contributing](#Contributing)
+- [Tests](#Tests)
+- [Credits](#Credits)
+${renderLicenseToC(data)}
   
 ## Installation
   
