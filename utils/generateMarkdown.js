@@ -30,7 +30,7 @@ function renderLicenseSection(data) {
   if (data.license !== "None") {
     return heading + "\n\n" + body;
   } else {
-    return;
+    return "";
   }
 }
 
