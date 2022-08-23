@@ -1,5 +1,6 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
+// TODO: Smile. You are enough.
+
+//returns a license badge based on which license is passed in
 
 function renderLicenseBadge(data) {
   if (data.license === "None") {
@@ -20,8 +21,8 @@ function renderLicenseToC(data) {
 }
 
 
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
+// returns the license section of README
+
 function renderLicenseSection(data) {
   var heading = "## License";
   var body = data.license;
@@ -36,7 +37,7 @@ function renderLicenseSection(data) {
   };
 };
 
-// TODO: Create a function to generate markdown for README
+// generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
 
