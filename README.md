@@ -6,7 +6,7 @@
   
 This command line application will allow the user to create a clean and professional README file through a series of prompts in their terminal. It will then generate the README file that they can use in their repository. This README file was created using this generator!
 
-You can view the submission video [here](https://drive.google.com/file/d/1aPTcs2zxkWzbs2LsGI4GfTGvzT3Chfom/view).
+You can view the step by step video [here](https://drive.google.com/file/d/1aPTcs2zxkWzbs2LsGI4GfTGvzT3Chfom/view).
 
 This README.md file is my sample file. 
   
