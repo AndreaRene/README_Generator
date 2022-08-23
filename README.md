@@ -8,8 +8,6 @@ This command line application will allow the user to create a clean and professi
 
 You can view the step by step video [here](https://drive.google.com/file/d/1aPTcs2zxkWzbs2LsGI4GfTGvzT3Chfom/view).
 
-This README.md file is my sample file. 
-  
 ## Contents
   
 - [Installation](#Installation)
