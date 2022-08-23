@@ -5,6 +5,10 @@
 ## Description
   
 This command line application will allow the user to create a clean and professional README file through a series of prompts in their terminal. It will then generate the README file that they can use in their repository. This README file was created using this generator!
+
+You can view the submission video [here](https://drive.google.com/file/d/1aPTcs2zxkWzbs2LsGI4GfTGvzT3Chfom/view).
+
+This README.md file is my sample file. 
   
 ## Contents
   
@@ -22,6 +26,10 @@ To install this application, you will need to clone the repository locally and t
 ## Usage
   
 Once the prompts begin on your screen, you will answer them in as much detail and with as much clarity as possible. Please note, the enter key will move you on to the next question. The application takes care of basic formatting, however, if you would like to add some styling to your sections, see this [Github Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#links) for a reference as to how to manipulate your text within the terminal to achieve the look you desire. 
+
+See the screenshot below for a visual of how the terminal should look once you have completed the prompts.
+
+![a screenshot of my terminal](imgs/aplication_screenshot.PNG)
   
 ## Contributing
   
