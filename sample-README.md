@@ -1,5 +1,7 @@
 # README Generator
 
+![](https://img.shields.io/badge/license-MIT-ff69b4)
+  
 ## Description
   
 This command line application will allow the user to create a clean and professional README file through a series of prompts in their terminal. It will then generate the README file that they can use in their repository. This README file was created using this generator!
@@ -35,6 +37,10 @@ If you would like to contribute to this application, please feel free to contact
   
 There are currently no tests for this application. If you would like to suggest one, give me a shout using the links below.
 
+## License
+
+MIT - [Click here to see a copy of the MIT license](https://www.mit.edu/~amini/LICENSE.md)
+  
 ## Questions
 
 If you have any questions, feel free to reach out:
